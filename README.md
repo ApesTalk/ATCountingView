@@ -110,7 +110,7 @@ func animateToNumber(toNumber: Int, duration: TimeInterval) {
 }
 ```
 
-[OC版本在这里]() 
+[OC版本在这里](https://github.com/ApesTalk/ATCountingView/tree/master/OC) 
 
 
 ## 用法
@@ -127,7 +127,7 @@ countView.animateToNumber(toNumber: 0, duration: 1);//9->0
 
 ## 效果图
 
-![](https://github.com/ApesTalk/ATCountingView/counting.gif)
+![](https://github.com/ApesTalk/ATCountingView/blob/master/counting.gif)
 
 
 
