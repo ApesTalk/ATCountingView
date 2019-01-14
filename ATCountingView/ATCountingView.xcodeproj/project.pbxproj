@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D7A564021EC1614009FE56F /* ATColorPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7A563F21EC1614009FE56F /* ATColorPanel.swift */; };
 		6DBF56F121EB2B8C001B2212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBF56F021EB2B8C001B2212 /* AppDelegate.swift */; };
 		6DBF56F321EB2B8C001B2212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBF56F221EB2B8C001B2212 /* ViewController.swift */; };
 		6DBF56F621EB2B8C001B2212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBF56F421EB2B8C001B2212 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D7A563F21EC1614009FE56F /* ATColorPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATColorPanel.swift; sourceTree = "<group>"; };
 		6DBF56ED21EB2B8C001B2212 /* ATCountingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATCountingView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DBF56F021EB2B8C001B2212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DBF56F221EB2B8C001B2212 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				6DBF56FC21EB2B8D001B2212 /* Info.plist */,
 				6DBF571E21EB2BB7001B2212 /* ATCountingView.swift */,
 				6DBF572221EB2FB3001B2212 /* UIView+ATExtension.swift */,
+				6D7A563F21EC1614009FE56F /* ATColorPanel.swift */,
 			);
 			path = ATCountingView;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D7A564021EC1614009FE56F /* ATColorPanel.swift in Sources */,
 				6DBF571F21EB2BB7001B2212 /* ATCountingView.swift in Sources */,
 				6DBF572321EB2FB3001B2212 /* UIView+ATExtension.swift in Sources */,
 				6DBF56F321EB2B8C001B2212 /* ViewController.swift in Sources */,

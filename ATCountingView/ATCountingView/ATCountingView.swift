@@ -98,6 +98,10 @@ class ATCountingView: UIView {
                 self.frontLabel.transform = self.frontLabel.transform.translatedBy(x: 0, y: -self.at_h())
                 self.backLabel.transform = self.backLabel.transform.translatedBy(x: 0, y: -self.at_h())
             }) { (finished) in
+                if !finished {
+                    return
+                }
+                
                 let tmpLabel = self.frontLabel
                 self.frontLabel = self.backLabel
                 self.backLabel = tmpLabel
@@ -124,6 +128,10 @@ class ATCountingView: UIView {
                 self.frontLabel.transform = self.frontLabel.transform.translatedBy(x: 0, y: self.at_h())
                 self.backLabel.transform = self.backLabel.transform.translatedBy(x: 0, y: self.at_h())
             }) { (finished) in
+                if !finished {
+                    return
+                }
+                
                 let tmpLabel = self.frontLabel
                 self.frontLabel = self.backLabel
                 self.backLabel = tmpLabel

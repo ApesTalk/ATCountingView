@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     let eView = ATCountingView()
     let fView = ATCountingView()
     
+    //test show RGB
+    let rgbPanel = ATColorPanel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -93,6 +96,9 @@ class ViewController: UIViewController {
         clearBtn.setTitleColor(UIColor.black, for: UIControlState.normal)
         clearBtn.addTarget(self, action: #selector(reset), for: UIControlEvents.touchUpInside)
         self.view.addSubview(clearBtn)
+        
+        rgbPanel.frame = CGRect(x: (self.view.at_w()-rgbPanel.fixWidth)/2.0, y: 550, width: rgbPanel.fixWidth, height: 50)
+        self.view.addSubview(rgbPanel)
     }
 
     @objc func start() {
@@ -103,6 +109,8 @@ class ViewController: UIViewController {
         dView.animateToNumber(toNumber: 8, duration: 1);//3->8
         eView.animateToNumber(toNumber: 9, duration: 1);//2->9
         fView.animateToNumber(toNumber: 4, duration: 1);//9->4
+        
+        rgbPanel.showColor(color: UIColor(red: 0.2, green: 0.34, blue: 0.45, alpha: 0.6))
     }
     
     @objc func reset() {
@@ -113,6 +121,8 @@ class ViewController: UIViewController {
         dView.animateToNumber(toNumber: 3, duration: 1);
         eView.animateToNumber(toNumber: 2, duration: 1);
         fView.animateToNumber(toNumber: 9, duration: 1);
+        
+        rgbPanel.showColor(color: UIColor(red: 0.5, green: 0.64, blue: 0.15, alpha: 1.0))
     }
     
     override func didReceiveMemoryWarning() {

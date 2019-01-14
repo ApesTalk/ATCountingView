@@ -171,6 +171,10 @@
             _frontLabel.transform = CGAffineTransformTranslate(_frontLabel.transform, 0, -self.at_h);
             _backLabel.transform = CGAffineTransformTranslate(_backLabel.transform, 0, -self.at_h);
         } completion:^(BOOL finished) {
+            if(!finished){
+                return;
+            }
+            
             UILabel *tmpLabel = self.frontLabel;
             self.frontLabel = self.backLabel;
             self.backLabel = tmpLabel;
@@ -199,6 +203,10 @@
             _frontLabel.transform = CGAffineTransformTranslate(_frontLabel.transform, 0, self.at_h);
             _backLabel.transform = CGAffineTransformTranslate(_backLabel.transform, 0, self.at_h);
         } completion:^(BOOL finished) {
+            if(!finished){
+                return;
+            }
+            
             UILabel *tmpLabel = self.frontLabel;
             self.frontLabel = self.backLabel;
             self.backLabel = tmpLabel;
