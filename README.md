@@ -119,8 +119,8 @@ func animateToNumber(toNumber: Int, duration: TimeInterval) {
 
 let countView = CGRect(x: 100, y: 150, width: 50, height: 50)
 countView(color: UIColor.red)
-countView = 9
-//countView = true;
+countView.number = 9
+//countView.cycle = true;
 countView.animateToNumber(toNumber: 0, duration: 1);//9->0
 ```
 
